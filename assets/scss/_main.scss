@@ -1,3 +1,48 @@
 .main {
   margin-bottom: $gap-xl;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+    h2 {
+      margin: 0;
+      line-height: inherit;
+    }
+  }
+
+  .user-login {
+    margin-bottom: $gap * 4;
+    h2 {
+      margin: 0;
+      line-height: inherit;
+    }
+  }
+}
+
+.new-films {
+
+  &-row {
+    margin-left: -$gap-sm;
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+    margin-bottom: $gap;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.1em;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+
 }

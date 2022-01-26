@@ -3,3 +3,29 @@
   0 0 10px $color-dark,
   0 0 20px $color-dark;
 }
+
+%pseudo-title{
+  position: relative;
+  overflow: hidden;
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 3px;
+    background-color: $color-accent-light;
+  }
+
+  &:after {
+    bottom: 9px;
+    margin-left: $gap;
+
+  }
+  &:before {
+    top: 9px;
+    bottom: unset;
+    margin-left: -$gap;
+    transform: translateX(-100%);
+  }
+}
