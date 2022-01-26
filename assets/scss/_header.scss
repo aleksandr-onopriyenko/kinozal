@@ -4,21 +4,27 @@
 
 .header-logo {
   padding: 100px 0;
+
+  text-align: center;
+
   background-color: $color-dark;
   background-image: url(../img/header-bg.jpg);
   background-position: 50% 50%;
   background-size: cover;
-  text-align: center;
 
   &__title {
     display: block;
+
+    padding-left: 0.33em;
+
+    letter-spacing: 0.33em;
+
     color: $color-accent;
+
     font-family: $font-header;
     font-size: 3.5rem;
-    letter-spacing: 0.33em;
-    padding-left: 0.33em;
-    @extend %text-shadow;
 
+    @extend %text-shadow;
     @include xs-min {
       font-size: 3.5rem;
     }
@@ -29,9 +35,13 @@
 
   &__description {
     display: block;
-    color: $color-white;
-    font-size: 1.15rem;
+
     letter-spacing: 0.2em;
+
+    color: $color-white;
+
+    font-size: 1.15rem;
+
     @extend %text-shadow;
   }
 }
