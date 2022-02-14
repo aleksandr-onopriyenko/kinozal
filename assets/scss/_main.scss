@@ -18,12 +18,12 @@
   }
 }
 
-.new-films {
-
+.new-films,
+.top-week {
   &-row {
     margin-left: -$gap-sm;
     margin-right: -$gap-sm;
-    margin-bottom: -$gap;
+    // margin-bottom: -$gap;
   }
 
   &-item {
@@ -33,6 +33,10 @@
 
     &__thumbnail {
       margin-bottom: 0;
+
+      &:hover {
+        background-color: $color-accent;
+      }
     }
 
     &__title {
@@ -41,8 +45,42 @@
       line-height: 1.1em;
       text-align: center;
       margin: 0;
+
+      @include text-shortener;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__link {
+      transition: color 0.3s;
+      &:hover .new-films-item__title,
+      &:hover .top-week-item__title {
+        color: $color-white;
+      }
     }
   }
 
+  .top-week {
+  }
+}
 
+.film-news {
+  &-item {
+    &__thumbnail {
+      display: block;
+      width: 100%;
+    }
+
+    &:hover &__thumbnail {
+      background-color: $color-accent;
+    }
+    &:hover &__link {
+      color: $color-accent;
+    }
+    &:hover &__btn {
+      background-color: $color-accent;
+    }
+  }
 }

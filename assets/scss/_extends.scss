@@ -1,10 +1,8 @@
 %text-shadow {
-  text-shadow: 0 0 5px $color-dark,
-  0 0 10px $color-dark,
-  0 0 20px $color-dark;
+  text-shadow: 0 0 5px $color-dark, 0 0 10px $color-dark, 0 0 20px $color-dark;
 }
 
-%pseudo-title{
+%pseudo-title {
   position: relative;
   overflow: hidden;
   &:after,
@@ -20,10 +18,9 @@
   &:after {
     bottom: 9px;
     margin-left: $gap;
-
   }
   &:before {
-    top: 9px;
+    top: 10px;
     bottom: unset;
     margin-left: -$gap;
     transform: translateX(-100%);
