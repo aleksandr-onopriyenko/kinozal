@@ -1,0 +1,23 @@
+.films-info {
+  .embed-responsive {
+    border: 1px solid $color-gray;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+  }
+
+  &__well {
+    border-radius: 0 0 4px 4px;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+      font-size: 1.2em;
+    }
+  }
+
+  &__badge {
+    font-size: 0.8em;
+  }
+}

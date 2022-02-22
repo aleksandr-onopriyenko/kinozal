@@ -107,6 +107,9 @@ h1 {
   font-size: 3rem;
   margin: -9.99999999px 0 1em;
 }
+h1.h1--line-up::after {
+  bottom: 9px;
+}
 
 section .section__title {
   font-family: "PT Serif", serif;
@@ -223,6 +226,25 @@ section .section__title {
 }
 .film-news-item:hover .film-news-item__btn {
   background-color: #df8a13;
+}
+
+.films-info .embed-responsive {
+  border: 1px solid #d5d5d5;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+.films-info__well {
+  border-radius: 0 0 4px 4px;
+}
+.films-info__well-item {
+  font-size: 1.2em;
+}
+.films-info__well-item:not(:last-child) {
+  margin-right: 15px;
+}
+.films-info__badge {
+  font-size: 0.8em;
 }
 
 .left-sidebar {

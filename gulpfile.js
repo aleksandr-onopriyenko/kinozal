@@ -66,7 +66,7 @@ function watchFiles() {
   watch(PATH.scssFiles, series(scss));
   watch(PATH.htmlFiles, sync);
   watch(PATH.jsFiles, sync);
-  // watch(PATH.cssFiles, sync);
+  watch(PATH.cssFiles, sync);
 }
 
 function watchDevFiles() {

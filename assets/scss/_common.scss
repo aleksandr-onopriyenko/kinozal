@@ -25,13 +25,18 @@ h1 {
   margin: -$gap-md 0 1em;
   @extend %pseudo-title;
 
+  &.h1--line-up {
+    &::after {
+      bottom: 9px;
+    }
+  }
 }
 
 section {
   .section__title {
     font-family: $font-header;
     font-size: 2.5rem;
-    @extend  %pseudo-title;
+    @extend %pseudo-title;
     padding-left: 45px;
     margin: 60px 0 45px 0;
   }
