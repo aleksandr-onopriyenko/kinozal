@@ -1,4 +1,5 @@
 .films-info {
+  // margin-bottom: 80px;
   .embed-responsive {
     border: 1px solid $color-gray;
     border-bottom: 0;
@@ -13,6 +14,7 @@
       &:not(:last-child) {
         margin-right: 15px;
       }
+      white-space: nowrap;
       font-size: 1.2em;
     }
   }
@@ -20,4 +22,16 @@
   &__badge {
     font-size: 0.8em;
   }
+}
+
+.films-review {
+  .panel {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.films-comment-form {
+  overflow: hidden;
 }

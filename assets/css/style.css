@@ -2,21 +2,21 @@
   text-shadow: 0 0 5px #232323, 0 0 10px #232323, 0 0 20px #232323;
 }
 
-section .section__title, h1 {
+h1, section .section__title {
   position: relative;
   overflow: hidden;
 }
-section .section__title:after, h1:after, section .section__title:before, h1:before {
+h1:after, section .section__title:after, h1:before, section .section__title:before {
   content: "";
   position: absolute;
   width: 100%;
   border-bottom: 3px solid #f0ad4f;
 }
-section .section__title:after, h1:after {
+h1:after, section .section__title:after {
   bottom: 7px;
   margin-left: 15px;
 }
-section .section__title:before, h1:before {
+h1:before, section .section__title:before {
   top: 10px;
   bottom: unset;
   margin-left: -15px;
@@ -102,20 +102,29 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
-h1 {
-  font-family: "PT Serif", serif;
-  font-size: 3rem;
-  margin: -9.99999999px 0 1em;
+section {
+  overflow: hidden;
 }
-h1.h1--line-up::after {
-  bottom: 9px;
-}
-
 section .section__title {
   font-family: "PT Serif", serif;
   font-size: 2.5rem;
   padding-left: 45px;
   margin: 60px 0 45px 0;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin: -9.99999999px 0 1em;
+}
+h1.h1--line-up {
+  padding-left: 0;
+}
+h1.h1--line-up::after {
+  bottom: 9px;
+}
+h1.h1--line-up:before {
+  content: none;
 }
 
 .header {
@@ -211,6 +220,9 @@ section .section__title {
   color: #ffffff;
 }
 
+.film-news-item h3 {
+  font-size: 1.5rem;
+}
 .film-news-item__thumbnail {
   display: block;
   width: 100%;
@@ -238,6 +250,7 @@ section .section__title {
   border-radius: 0 0 4px 4px;
 }
 .films-info__well-item {
+  white-space: nowrap;
   font-size: 1.2em;
 }
 .films-info__well-item:not(:last-child) {
@@ -245,6 +258,14 @@ section .section__title {
 }
 .films-info__badge {
   font-size: 0.8em;
+}
+
+.films-review .panel:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.films-comment-form {
+  overflow: hidden;
 }
 
 .left-sidebar {
@@ -421,6 +442,12 @@ section .section__title {
   }
 }
 @media (max-width: 767.8px) {
+  h1:after, section .section__title:after {
+    bottom: 4px;
+  }
+  h1:before, section .section__title:before {
+    top: 7px;
+  }
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
   }
@@ -429,6 +456,20 @@ section .section__title {
   }
   .navbar-right {
     margin-top: 0;
+  }
+  section .section__title {
+    font-size: 1.75rem;
+    margin: 45px 0 30px 0;
+  }
+  h1.h1--line-up::after {
+    bottom: 5px;
+  }
+  h1.h1--line-up {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .film-news-item h3 {
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 575.8px) {

@@ -17,11 +17,19 @@
   &:after {
     bottom: 7px;
     margin-left: $gap;
+
+    @include sm {
+      bottom: 4px;
+    }
   }
   &:before {
     top: 10px;
     bottom: unset;
     margin-left: -$gap;
     transform: translateX(-100%);
+
+    @include sm {
+      top: 7px;
+    }
   }
 }
