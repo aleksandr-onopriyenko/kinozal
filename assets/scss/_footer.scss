@@ -1,0 +1,40 @@
+.footer {
+  padding-top: 45px;
+  width: 100%;
+  background: $color-dark;
+
+  &-title {
+    display: block;
+    color: $color-gray;
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.1;
+  }
+
+  &-list-link {
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-link {
+    color: $color-gray-dark;
+    font-size: 16px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-white;
+    }
+
+    &--bold {
+      color: $color-gray;
+      font-weight: 700;
+    }
+  }
+
+  &-bottom {
+    text-align: center;
+
+    padding: 20px 0;
+  }
+}

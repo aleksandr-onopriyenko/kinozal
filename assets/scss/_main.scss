@@ -61,9 +61,6 @@
       }
     }
   }
-
-  .top-week {
-  }
 }
 
 .film-news {
@@ -71,6 +68,10 @@
     &__thumbnail {
       display: block;
       width: 100%;
+    }
+
+    .btn-group {
+      margin-bottom: 30px;
     }
 
     &:hover &__thumbnail {
