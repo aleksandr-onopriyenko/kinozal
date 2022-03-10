@@ -2,21 +2,41 @@
   text-shadow: 0 0 5px #232323, 0 0 10px #232323, 0 0 20px #232323;
 }
 
-h1, section .section__title {
+h1, section .top-week__title,
+section .film-news__title,
+section .films-comment__title,
+section .films-review__title,
+section .films-description__title {
   position: relative;
   overflow: hidden;
 }
-h1:after, section .section__title:after, h1:before, section .section__title:before {
+h1:after, section .top-week__title:after,
+section .film-news__title:after,
+section .films-comment__title:after,
+section .films-review__title:after,
+section .films-description__title:after, h1:before, section .top-week__title:before,
+section .film-news__title:before,
+section .films-comment__title:before,
+section .films-review__title:before,
+section .films-description__title:before {
   content: "";
   position: absolute;
   width: 100%;
   border-bottom: 3px solid #f0ad4f;
 }
-h1:after, section .section__title:after {
+h1:after, section .top-week__title:after,
+section .film-news__title:after,
+section .films-comment__title:after,
+section .films-review__title:after,
+section .films-description__title:after {
   bottom: 7px;
   margin-left: 15px;
 }
-h1:before, section .section__title:before {
+h1:before, section .top-week__title:before,
+section .film-news__title:before,
+section .films-comment__title:before,
+section .films-review__title:before,
+section .films-description__title:before {
   top: 10px;
   bottom: unset;
   margin-left: -15px;
@@ -65,6 +85,7 @@ h1:before, section .section__title:before {
   border: none;
   background-color: #df8a13;
   font-size: 1.25rem;
+  margin-bottom: 0;
 }
 
 .panel-body {
@@ -105,7 +126,11 @@ a:hover, a:focus {
 section {
   overflow: hidden;
 }
-section .section__title {
+section .top-week__title,
+section .film-news__title,
+section .films-comment__title,
+section .films-review__title,
+section .films-description__title {
   font-family: "PT Serif", serif;
   font-size: 2.5rem;
   padding-left: 45px;
@@ -442,10 +467,18 @@ h1.h1--line-up:before {
   }
 }
 @media (max-width: 767.8px) {
-  h1:after, section .section__title:after {
+  h1:after, section .top-week__title:after,
+section .film-news__title:after,
+section .films-comment__title:after,
+section .films-review__title:after,
+section .films-description__title:after {
     bottom: 4px;
   }
-  h1:before, section .section__title:before {
+  h1:before, section .top-week__title:before,
+section .film-news__title:before,
+section .films-comment__title:before,
+section .films-review__title:before,
+section .films-description__title:before {
     top: 7px;
   }
   .navbar-inverse .navbar-nav > li > a {
@@ -457,7 +490,11 @@ h1.h1--line-up:before {
   .navbar-right {
     margin-top: 0;
   }
-  section .section__title {
+  section .top-week__title,
+section .film-news__title,
+section .films-comment__title,
+section .films-review__title,
+section .films-description__title {
     font-size: 1.75rem;
     margin: 45px 0 30px 0;
   }

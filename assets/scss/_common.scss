@@ -21,7 +21,11 @@ a {
 
 section {
   overflow: hidden;
-  .section__title {
+  .top-week__title,
+  .film-news__title,
+  .films-comment__title,
+  .films-review__title,
+  .films-description__title {
     font-family: $font-header;
     font-size: 2.5rem;
     @extend %pseudo-title;
